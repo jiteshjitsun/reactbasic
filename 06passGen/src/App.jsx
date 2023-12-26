@@ -29,7 +29,7 @@ function App() {
 
   const copyPassToClip = useCallback(() => {
     passRef.current?.select()
-    passRef.current?.setSelection Range(0,4)
+    passRef.current?.setSelectionRange(0,4)
     window.navigator.clipboard.writeText(password)
   },
   [password])
